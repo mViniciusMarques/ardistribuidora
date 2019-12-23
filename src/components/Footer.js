@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = props => (
   <footer id="footer">
     <section>
-      <h2>Aliquam sed mauris</h2>
+      <h2>Trabalhe conosco</h2>
       <p>
         Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat
         magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras
@@ -14,21 +14,21 @@ const Footer = props => (
       <ul className="actions">
         <li>
           <Link to="/generic" className="button">
-            Learn More
+            Saiba mais
           </Link>
         </li>
       </ul>
     </section>
     <section>
-      <h2>Etiam feugiat</h2>
+      <h2>Onde nos encontrar</h2>
       <dl className="alt">
-        <dt>Address</dt>
-        <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+        <dt>Endereço</dt>
+        <dd>Rua Jose Teixeira Da Silva, 214 &bull; Cidade do Sol, Juiz de Fora M.G - 36085-440 &bull; BRASIL</dd>
         <dt>Phone</dt>
-        <dd>(000) 000-0000 x 0000</dd>
+        <dd>(32) 3215-2763</dd>
         <dt>Email</dt>
         <dd>
-          <a href="https://codebushi.com">information@untitled.tld</a>
+          <a href="https://codebushi.com">financeiro@ardistribuidora.com</a>
         </dd>
       </dl>
       <ul className="icons">
@@ -66,7 +66,7 @@ const Footer = props => (
       </ul>
     </section>
     <p className="copyright">
-      &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+      &copy; Desenvolvimento e Design: <a href="https://html5up.net">Empire 42</a>.
     </p>
   </footer>
 )

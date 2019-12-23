@@ -3,6 +3,10 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
 import pic01 from '../assets/images/pic01.jpg'
+import warehouse_pic from '../assets/images/armazem.jpeg'
+import nestle_logo_pic from '../assets/images/nestle-logo.png'
+import wickbold_logo_pic from '../assets/images/wickbold_logo.png'
+import arcor_logo_pic from '../assets/images/logo-arcor.png'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
@@ -26,7 +30,7 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Gatsby Starter - Stellar" />
+        <Helmet title="Distribuidora A.R" />
 
         <Header />
 
@@ -41,9 +45,9 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Ipsum sed adipiscing</h2>
+                  <h2>Especialistas em distribuição</h2>
                 </header>
-                <p>
+                <p className="content">
                   Sed lorem ipsum dolor sit amet nullam consequat feugiat
                   consequat magna adipiscing magna etiam amet veroeros. Lorem
                   ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem
@@ -51,54 +55,82 @@ class Index extends React.Component {
                 </p>
                 <ul className="actions">
                   <li>
-                    <Link to="/generic" className="button">
-                      Learn More
+                    <Link to="/home" className="button">
+                      Saiba mais
                     </Link>
                   </li>
                 </ul>
               </div>
               <span className="image">
-                <img src={pic01} alt="" />
+                <img src={warehouse_pic} style={{ height: '13em', width: '13em'}} alt="" />
               </span>
             </div>
           </section>
 
           <section id="first" className="main special">
             <header className="major">
-              <h2>Magna veroeros</h2>
+              <h2>Parceiros</h2>
             </header>
             <ul className="features">
               <li>
-                <span className="icon major style1 fa-code"></span>
-                <h3>Ipsum consequat</h3>
+                <div className="spotlight" >
+                  <div className="content">
+                    <span className="image" style={{marginLeft : '0px !important'}}>
+                      <img src={nestle_logo_pic} style={{ height: '10em', width: '10em' }} alt="" />
+                    </span>
+                  </div>
+                </div>
+              
+                <h3><b>Nestlé</b></h3>
                 <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
+                  Nestlé S.A. é uma empresa transnacional suíça do setor de alimentos e bebidas com sede em Vevey, Vaud, na Suíça. 
                 </p>
+
+                  <Link to="/nestle" className="button">
+                    Saiba mais
+                  </Link>
               </li>
               <li>
-                <span className="icon major style3 fa-copy"></span>
-                <h3>Amed sed feugiat</h3>
+              <div className="spotlight" >
+                  <div className="content">
+                    <span className="image" style={{marginLeft : '0px !important'}}>
+                      <img src={wickbold_logo_pic} style={{ height: '10em', width: '10em' }} alt="" />
+                    </span>
+                  </div>
+                </div>
+                <h3><b>Wickbold</b></h3>
                 <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
+                  Wickbold é uma empresa brasileira de fabricação de pães, panetones e alimentos em geral.
                 </p>
+
+                  <Link to="/wickbold" className="button">
+                    Saiba mais
+                  </Link>
               </li>
+
               <li>
-                <span className="icon major style5 fa-diamond"></span>
-                <h3>Dolor nullam</h3>
+              <div className="content">
+                    <span className="image" style={{marginLeft : '0px !important'}}>
+                      <img src={arcor_logo_pic} style={{ height: '13em', width: '13em' }} alt="" />
+                    </span>
+                  </div>
+                <h3><b>Arcor</b></h3>
                 <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
+                  O Grupo Arcor é uma empresa multinacional de origem argentina, especializada na elaboração de alimentos.
                 </p>
+
+                <Link to="/arcor" className="button">
+                    Saiba mais
+                </Link>
               </li>
+              
             </ul>
             <footer className="major">
               <ul className="actions">
                 <li>
-                  <Link to="/generic" className="button">
-                    Learn More
-                  </Link>
+                  {/* <Link to="/nestle" className="button">
+                    Saiba mais
+                  </Link> */}
                 </li>
               </ul>
             </footer>
@@ -106,7 +138,7 @@ class Index extends React.Component {
 
           <section id="second" className="main special">
             <header className="major">
-              <h2>Ipsum consequat</h2>
+              <h2>Nosso trabalho</h2>
               <p>
                 Donec imperdiet consequat consequat. Suspendisse feugiat congue
                 <br />
@@ -115,12 +147,12 @@ class Index extends React.Component {
             </header>
             <ul className="statistics">
               <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
+                <span className="icon fa-truck"></span>
+                <strong>5,120</strong> Km por mês
               </li>
               <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
+                <span className="icon fa-archive"></span>
+                <strong>8,192</strong> Pacotes distribuidos
               </li>
               <li className="style3">
                 <span className="icon fa-signal"></span>
@@ -151,7 +183,7 @@ class Index extends React.Component {
               <ul className="actions">
                 <li>
                   <Link to="/generic" className="button">
-                    Learn More
+                    Saiba mais
                   </Link>
                 </li>
               </ul>
@@ -160,7 +192,7 @@ class Index extends React.Component {
 
           <section id="cta" className="main special">
             <header className="major">
-              <h2>Congue imperdiet</h2>
+              <h2>Sobre nós</h2>
               <p>
                 Donec imperdiet consequat consequat. Suspendisse feugiat congue
                 <br />
